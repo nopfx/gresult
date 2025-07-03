@@ -9,7 +9,7 @@ import (
 func TestSimplestUnwrap(t *testing.T) {
 	result := Ok("nopfx").Unwrap()
 	if result != "nopfx" {
-		t.Errorf("Expected Striong(nopfx) but got some shit with value: %v", result)
+		t.Errorf("Expected String(nopfx) but got wrong value: %v", result)
 	}
 }
 
